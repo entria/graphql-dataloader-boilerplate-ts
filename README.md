@@ -24,14 +24,11 @@ Very simple boilerplate using GraphQL and DataLoader
 ├── /test/                   # Test helpers
 ```
 
-## Create-GraphQL
-If you want to move faster you should use [create-graphql](https://github.com/lucasbento/create-graphql) to simplify the creation of a GraphQL Server
-
 ## Command
 
 #### Setup
 ```bash
-npm install
+yarn install
 ```
 Note: If you do not have mongodb installed, please install it:
 ```bash
@@ -39,17 +36,21 @@ brew install mongodb
 ```
 #### Develop
 ```bash
-npm run watch
+yarn start
 ```
+
+#### Playground
+
+There's a [GraphQL Playground](https://github.com/prisma/graphql-playground) provided on `http://localhost:5000/playground`.
 
 ### Test
 ```bash
-npm test
+yarn test
 ```
 
 Or
 ```bash
-npm run test:watch
+yarn test:watch
 ```
 
 #### Docker and docker-compose
@@ -67,25 +68,15 @@ docker-compose -f docker-compose.test.yml build && docker-compose -f docker-comp
 #### Production
 ```bash
 # first compile the code
-npm run build
+yarn build
 
 # run graphql compiled server
-npm start
-```
-
-### Flow
-```bash
-npm run flow
-```
-
-Or
-```bash
-flow
+yarn serve
 ```
 
 ### REPL server
 ```bash
-npm run repl
+yarn repl
 
 awesome > const user = await M.User.find()
 ```
@@ -95,7 +86,7 @@ Yep, await syntax works on the repl, it is awesome, tks @princejwesley (https://
 ### Schema
 Update your schema
 ```bash
-npm run update-schema
+yarn update-schema
 ```
 
 Take a look on the [Schema](https://github.com/sibelius/graphql-dataloader-boilerplate/blob/master/data/schema.graphql)
