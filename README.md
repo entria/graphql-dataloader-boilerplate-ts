@@ -1,6 +1,6 @@
 # Deprecated
 
-Try a better version here https://github.com/entria/entria-fullstackde
+Try a better version here https://github.com/entria/entria-fullstack
 
 # GraphQL DataLoader Boilerplate
 
